@@ -104,7 +104,7 @@ class Main{
         int count = link.countNodes();
         System.out.print("Count of Nodes this list have:"+count);
         // Set the Value at specific place
-        System.out.print("Enter the Node Position:");
+        System.out.print("\nEnter the Node Position:");
         int pos = scan.nextInt();
 
         System.out.print("Enter the Node data value:");
@@ -116,10 +116,11 @@ class Main{
 }
 
 // Output
-// javac LinkedList.java
+// PS C:\JavaSpringRoadmap\LinkedList> javac LinkedList.java
 // PS C:\JavaSpringRoadmap\LinkedList> java Main
 // Enter the Node data value:67
-// Enter the Node Position:3
-// Enter the Node data value:78
-// 67->20->40->78->50->39->46->null
+// Count of Nodes this list have:6
+// Enter the Node Position:4
+// Enter the Node data value:12
+// 67->20->40->50->12->39->46->null
 // PS C:\JavaSpringRoadmap\LinkedList>
