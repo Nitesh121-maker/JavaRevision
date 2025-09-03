@@ -60,7 +60,18 @@ class LinkedList {
 
         temp.next = NewNode;
     }
-
+    
+    // Count the element in the list 
+    int countNodes(){
+        int count = 0;
+        Node temp = head;
+        
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
     void display(){
         Node temp = head;
         while (temp != null) {
@@ -90,7 +101,8 @@ class Main{
         
         // Set the value at beginging 
         link.insertAtBeginning(data,next);
-
+        int count = link.countNodes();
+        System.out.print("Count of Nodes this list have:"+count);
         // Set the Value at specific place
         System.out.print("Enter the Node Position:");
         int pos = scan.nextInt();
